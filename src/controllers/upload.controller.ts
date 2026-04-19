@@ -1,73 +1,61 @@
-import { NextFunction, Request, Response } from "express";
-import {
-  deleteUploadedFile,
-  handleFileUpload,
-} from "../services/upload.service";
-import { logger } from "../libs/logger";
+import { Context } from "hono";
+import { deleteUploadedFile, handleFileUpload } from "../services/upload.service";
 
-export const uploadFile = (req: Request, res: Response): void => {
-  if (!req.file) {
-    logger.warn("📥 Upload failed: no file attached");
-    res.status(400).json({ success: false, message: "No file uploaded" });
-    return;
+export const uploadFile = async (c: Context) => {
+  const formData = await c.req.parseFormData();
+  const file = formData.get("file") as File | null;
+
+  if (!file) {
+    return c.json({ success: false, message: "No file uploaded" }, 400);
   }
 
   try {
-    const baseUrl = `${req.protocol}://${req.get("host")}`;
-    const fileData = handleFileUpload(req.file, baseUrl);
+    const baseUrl = c.req.header("host") || "";
+    const fileData = handleFileUpload(file, baseUrl);
 
-    logger.info(
-      `✅ File uploaded: ${req.file.originalname} (${req.file.mimetype}, ${req.file.size} bytes)`
-    );
-
-    res.status(200).json({
+    return c.json({
       success: true,
       message: "File uploaded successfully",
       data: fileData,
     });
   } catch (err: any) {
-    logger.error(`❌ Error after upload: ${err.message}`);
-
-    if (req.file?.filename) {
-      deleteUploadedFile(req.file.filename);
-    }
-
-    res.status(500).json({
-      success: false,
-      message: "Internal Server Error",
-    });
+    return c.json(
+      {
+        success: false,
+        message: "Internal Server Error",
+      },
+      500
+    );
   }
 };
 
-export const deleteFile = async (
-  req: Request,
-  res: Response,
-  _next: NextFunction
-): Promise<void> => {
-  const { filename } = req.params;
+export const deleteFile = async (c: Context) => {
+  const { filename } = c.req.param();
 
   if (!filename) {
-    logger.warn("🛑 Delete request without filename");
-    res.status(400).json({
-      success: false,
-      message: "Filename is required",
-    });
-    return;
+    return c.json(
+      {
+        success: false,
+        message: "Filename is required",
+      },
+      400
+    );
   }
-
-  logger.info(`🗑️ Manual delete requested for: ${filename}`);
 
   const deleted = await deleteUploadedFile(filename);
 
   if (deleted) {
-    res.status(200).json({
+    return c.json({
       success: true,
       message: `File ${filename} deleted successfully.`,
     });
   } else {
-    res.status(404).json({
-      success: false,
-      message: `File ${filename} not found or already deleted.`,
-    });
+    return c.json(
+      {
+        success: false,
+        message: `File ${filename} not found or already deleted.`,
+      },
+      404
+    );
   }
 };
