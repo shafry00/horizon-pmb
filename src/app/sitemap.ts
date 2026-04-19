@@ -3,6 +3,8 @@ import { routing } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
 import { Locale } from "next-intl";
 
+export const dynamic = "force-static";
+
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function sitemap(): MetadataRoute.Sitemap {

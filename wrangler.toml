@@ -2,7 +2,7 @@ name = "horizon-pmb-frontend"
 compatibility_date = "2024-04-19"
 
 [site]
-bucket = ".next/static"
+bucket = ".next"
 
 [vars]
-NEXT_PUBLIC_API_URL = ""
+NEXT_PUBLIC_API_URL = "https://horizon-pmb-api.shafryyusuf.workers.dev/api"
