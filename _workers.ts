@@ -1,0 +1,8 @@
+name = "horizon-pmb-frontend"
+compatibility_date = "2024-04-19"
+
+[site]
+bucket = ".output/server"
+
+[vars]
+NEXT_PUBLIC_API_URL = ""

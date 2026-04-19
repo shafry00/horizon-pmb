@@ -61,6 +61,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@opennextjs/cloudflare": "^1.19.1",
     "@tailwindcss/postcss": "^4",
     "@tanstack/eslint-plugin-query": "^5.73.3",
     "@types/bcrypt": "^5.0.2",
