@@ -1,0 +1,1306 @@
+{
+  "GLOBAL": {
+    "HEADER": {
+      "MENU": {
+        "menu-1": "Benefit Kampus",
+        "menu-2": "Fasilitas Kampus",
+        "menu-3": "Program Studi",
+        "menu-4": "Alur Pendaftaran",
+        "menu-5": "Daftar Sekarang"
+      }
+    },
+    "BUTTON": {
+      "delete": "Hapus"
+    }
+  },
+  "PAGE": {
+    "PMB-PAGE": {
+      "SECTION": {
+        "FORM-SECTION": {
+          "sub-heading": "Formulir Mahasiswa Baru {year}",
+          "heading": "Selamat datang di layanan Penerimaan Mahasiswa Baru (PMB) Horizon University Indonesia Tahun Ajaran {year}",
+          "BODY": {
+            "NEW-STUDENT-REGISTRATION-STAGE": {
+              "title": "Tahapan Pendaftaran Mahasiswa Baru:",
+              "STEP": {
+                "step-1": "Daftar",
+                "step-2": "Daftar Ulang (Pembayaran)",
+                "step-3": "Pembuatan Kartu Rencana Studi (Enlistment) & Pemberkasan (Upload Document)"
+              }
+            },
+            "REGISTRATION-FEE": {
+              "title": "<p><span class='highlight-text-2'>BIAYA PENDAFTARAN GRATIS!</span> Horizon University Indonesia tidak memungut biaya apapun untuk pendaftaran. Terima kasih!</p>"
+            },
+            "CONTACT": {
+              "title": "Horizon University Indonesia",
+              "CONTACT": {
+                "contact-1": "Whatsapp: 0811-8454-800 (Pusat)",
+                "contact-2": "Email: info.krw@horizon.ac.id",
+                "contact-3": "Website: horizon.ac.id"
+              }
+            }
+          },
+          "FORM": {
+            "STUDENT-INFORMATION-FORM": {
+              "title": "Informasi Mahasiswa",
+              "FIELD": {
+                "FIELD-1": {
+                  "label": "Pilih Program Studi",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-2": {
+                  "label": "Nama Lengkap",
+                  "placeholder": "Masukan Nama Lengkap Anda"
+                },
+                "FIELD-3": {
+                  "label": "Nomor Telepon",
+                  "placeholder": "Masukan Nomor HP/Whatsapp",
+                  "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                },
+                "FIELD-4": {
+                  "label": "Username/Akun Instagram",
+                  "placeholder": "Masukan Username/Akun Instagram"
+                },
+                "FIELD-5": {
+                  "label": "Tempat Lahir",
+                  "placeholder": "Masukan Tempat Lahir"
+                },
+                "FIELD-6": {
+                  "label": "Tempat Lahir",
+                  "placeholder": "DD / MM / YYYY"
+                },
+                "FIELD-7": {
+                  "label": "Jenis Kelamin",
+                  "placeholder": "Pilih Salah Satu",
+                  "OPTIONS": {
+                    "option-1": "Pria",
+                    "option-2": "Wanita"
+                  }
+                },
+                "FIELD-8": {
+                  "label": "Agama",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-9": {
+                  "label": "Alamat Domisili",
+                  "placeholder": "Masukan Alamat Domisili"
+                },
+                "FIELD-10": {
+                  "label": "Provinsi",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-11": {
+                  "label": "Kota/Kabupaten",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-12": {
+                  "label": "Kecamatan",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-13": {
+                  "label": "Kelurahan/Desa",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-14": {
+                  "label": "Asal Sekolah/Perguruan Tinggi",
+                  "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+                },
+                "FIELD-15": {
+                  "label": "Tahun Lulus",
+                  "placeholder": "Masukan Tahun Lulus"
+                },
+                "FIELD-16": {
+                  "label": "Status Pernikahan",
+                  "placeholder": "Pilih Salah Satu",
+                  "OPTIONS": {
+                    "option-1": "Ya",
+                    "option-2": "Tidak"
+                  }
+                },
+                "FIELD-17": {
+                  "label": "Status Pekerjaan",
+                  "placeholder": "Pilih Salah Satu",
+                  "OPTIONS": {
+                    "option-1": "Ya",
+                    "option-2": "Tidak"
+                  }
+                }
+              }
+            },
+            "PARENT-INFORMATION-FORM": {
+              "title": "Informasi Orang Tua",
+              "FIELD": {
+                "FIELD-1": {
+                  "label": "Nama Ayah",
+                  "placeholder": "Masukan Nama Ayah"
+                },
+                "FIELD-2": {
+                  "label": "Pekerjaan Ayah",
+                  "placeholder": "Masukan Pekerjaan Ayah"
+                },
+                "FIELD-3": {
+                  "label": "Nomor HP/Whatsapp Ayah",
+                  "placeholder": "Masukan Nomor HP/Whatsapp Ayah"
+                },
+                "FIELD-4": {
+                  "label": "Nama Ibu",
+                  "placeholder": "Masukan Nama Ibu"
+                },
+                "FIELD-5": {
+                  "label": "Pekerjaan Ibu",
+                  "placeholder": "Masukan Pekerjaan Ibu"
+                },
+                "FIELD-6": {
+                  "label": "Nomor HP/Whatsapp Ibu",
+                  "placeholder": "Masukan Nomor HP/Whatsapp Ibu"
+                },
+                "FIELD-7": {
+                  "label": "Dari Mana Anda Mendengar/Mengetahui Horizon U",
+                  "placeholder": "Pilih Salah Satu",
+                  "description": "Tidak perlu diisi apabila Anda bukan calon mahasiswa yang mengikuti program khusus partnership seperti Triputra Family Scholarship dan lainnya"
+                },
+                "FIELD-8": {
+                  "label": "Mengapa Anda Memilih Kuliah di Horizon U",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-9": {
+                  "label": "Nama Ambasador (Khusus Rekomendasi Program Teman Horizon)",
+                  "placeholder": "Masukan Nama Ambasador"
+                },
+                "FIELD-10": {
+                  "label": "Upload Surat Rekomendasi",
+                  "placeholder": "Upload File",
+                  "description": "Tidak perlu diisi apabila Anda bukan calon mahasiswa yang mengikuti program khusus partnership seperti Triputra Family Scholarship dan lainnya"
+                }
+              }
+            },
+            "ASSESSMENT-FORM": {
+              "title": "Tes Penilaian",
+              "FIELD": {
+                "placeholder": "Pilih Salah Satu"
+              }
+            },
+            "RESPONSE": {
+              "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih.",
+              "success": "Formulir telah berhasil dikirim! Terima kasih."
+            },
+            "BUTTON": {
+              "NEXT": "Selanjutnya",
+              "BACK": "Kembali",
+              "SUBMIT": "Daftar"
+            }
+          }
+        }
+      }
+    },
+    "RE-REGISTER-PAGE": {
+      "SECTION": {
+        "FORM-SECTION": {
+          "sub-heading": "Formulir Daftar Ulang Mahasiswa",
+          "heading": "Selamat Datang di Layanan Konfirmasi Penerimaan Beasiswa Sahabat Horizon TA 2025/2026 Horizon University Indonesia",
+          "BODY": {
+            "body-1": "Pastikan mengisi data yang benar dan surat pemberitahuan menerima beasiswa sudah ditandatangai oleh orang tua/wali calon mahasiswa dan calon mahasiswa. Terima kasih!",
+            "BODY-2": {
+              "heading": "Horizon University Indonesia",
+              "LIST-CONTACT": {
+                "wa": "Whatsapp: 0811-8454-800 (Pusat)",
+                "email": "Email: info.krw@horizon.ac.id",
+                "website": "Website: horizon.ac.id"
+              }
+            }
+          },
+          "FORM": {
+            "FIELD": {
+              "FIELD-1": {
+                "label": "Nama Lengkap",
+                "placeholder": "Masukan Nama Lengkap Anda"
+              },
+              "FIELD-2": {
+                "label": "Nomor Telepon",
+                "placeholder": "Masukan Nomor Telepon",
+                "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+              },
+              "FIELD-3": {
+                "label": "Email",
+                "placeholder": "Masukan Email"
+              },
+              "FIELD-4": {
+                "label": "Program Studi",
+                "placeholder": "Pilih Salah Satu",
+                "OPTIONS": {
+                  "option-1": "Teknik Informatika",
+                  "option-2": "Teknik Mesin",
+                  "option-3": "Teknik Elektro",
+                  "option-4": "Teknik Industri",
+                  "option-5": "Teknik Kimia",
+                  "option-6": "Teknik Industri"
+                }
+              },
+              "FIELD-5": {
+                "label": "Asal Sekolah/Perguruan Tinggi",
+                "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+              },
+              "FIELD-6": {
+                "label": "Upload Surat Beasiswa",
+                "placeholder": "Upload File"
+              }
+            },
+            "BUTTON": {
+              "SUBMIT": "Daftar Ulang Beasiswa"
+            },
+            "RESPONSE": {
+              "success": "Formulir telah berhasil dikirim! Terima kasih.",
+              "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+            }
+          }
+        }
+      }
+    },
+    "DASHBOARD": {
+      "SIDEBAR": {
+        "MENU": {
+          "MENU-1": {
+            "title": "Dashboard"
+          },
+          "MENU-2": {
+            "title": "User management",
+            "SUB-MENU": {
+              "sub-menu-1": "User List"
+            }
+          },
+          "MENU-3": {
+            "title": "Penerimaan Mahasiswa Baru",
+            "SUB-MENU": {
+              "sub-menu-1": "Pendaftaran",
+              "sub-menu-2": "Registrasi Ulang"
+            }
+          },
+          "MENU-4": {
+            "title": "Kemahanasiswaan",
+            "SUB-MENU": {
+              "sub-menu-1": "Konsultasi",
+              "sub-menu-2": "Daftar Beasiswa"
+            }
+          }
+        }
+      },
+      "USER-PAGE": {
+        "CREATE-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "FORM": {
+                "title": "Informasi Pengguna",
+                "description": "Silakan lengkapi data diri pengguna secara lengkap dan benar untuk keperluan administrasi kampus.",
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama",
+                    "placeholder": "Masukan Nama"
+                  },
+                  "FIELD-2": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-3": {
+                    "label": "Role",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-4": {
+                    "label": "Password",
+                    "placeholder": "Masukan Password"
+                  }
+                },
+                "BUTTON": {
+                  "cancel": "Batal",
+                  "submit": "Simpan Perubahan"
+                },
+                "RESPONSE": {
+                  "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                  "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                }
+              }
+            }
+          }
+        },
+        "EDIT-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "FORM": {
+                "title": "Informasi Pengguna",
+                "description": "Silakan lengkapi data diri pengguna secara lengkap dan benar untuk keperluan administrasi kampus.",
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama",
+                    "placeholder": "Masukan Nama"
+                  },
+                  "FIELD-2": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-3": {
+                    "label": "Role",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-4": {
+                    "label": "Password",
+                    "placeholder": "Masukan Password"
+                  }
+                },
+                "BUTTON": {
+                  "cancel": "Batal",
+                  "submit": "Simpan Perubahan"
+                },
+                "RESPONSE": {
+                  "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                  "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                }
+              }
+            }
+          }
+        }
+      },
+      "HOME-PAGE": {},
+      "REGISTRATION-PAGE": {
+        "EDIT-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "FORM": {
+                "STUDENT-INFORMATION-FORM": {
+                  "title": "Informasi Mahasiswa",
+                  "description": "Silakan lengkapi data diri mahasiswa secara lengkap dan benar untuk keperluan administrasi kampus.",
+                  "FIELD": {
+                    "FIELD-1": {
+                      "label": "Pilih Program Studi",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-2": {
+                      "label": "Nama Lengkap",
+                      "placeholder": "Masukan Nama Lengkap Anda"
+                    },
+                    "FIELD-3": {
+                      "label": "Nomor Telepon",
+                      "placeholder": "Masukan Nomor HP/Whatsapp",
+                      "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                    },
+                    "FIELD-4": {
+                      "label": "Username/Akun Instagram",
+                      "placeholder": "Masukan Username/Akun Instagram"
+                    },
+                    "FIELD-5": {
+                      "label": "Tempat Lahir",
+                      "placeholder": "Masukan Tempat Lahir"
+                    },
+                    "FIELD-6": {
+                      "label": "Tanggal Lahir",
+                      "placeholder": "DD / MM / YYYY"
+                    },
+                    "FIELD-7": {
+                      "label": "Jenis Kelamin",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Pria",
+                        "option-2": "Wanita"
+                      }
+                    },
+                    "FIELD-8": {
+                      "label": "Agama",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-9": {
+                      "label": "Alamat Domisili",
+                      "placeholder": "Masukan Alamat Domisili"
+                    },
+                    "FIELD-10": {
+                      "label": "Provinsi",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-11": {
+                      "label": "Kota/Kabupaten",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-12": {
+                      "label": "Kecamatan",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-13": {
+                      "label": "Kelurahan/Desa",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-14": {
+                      "label": "Asal Sekolah/Perguruan Tinggi",
+                      "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+                    },
+                    "FIELD-15": {
+                      "label": "Tahun Lulus",
+                      "placeholder": "Masukan Tahun Lulus"
+                    },
+                    "FIELD-16": {
+                      "label": "Status Pernikahan",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-17": {
+                      "label": "Status Pekerjaan",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    }
+                  },
+                  "RESPONSE": {
+                    "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                    "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                  },
+                  "BUTTON": {
+                    "CANCEL": "Batal",
+                    "SUBMIT": "Simpan Perubahan"
+                  }
+                },
+                "PARENT-INFORMATION-FORM": {
+                  "title": "Informasi Orang Tua",
+                  "description": "Silakan lengkapi data orang tua secara lengkap dan benar untuk keperluan administrasi kampus.",
+                  "FIELD": {
+                    "FIELD-1": {
+                      "label": "Nama Ayah",
+                      "placeholder": "Masukan Nama Ayah"
+                    },
+                    "FIELD-2": {
+                      "label": "Pekerjaan Ayah",
+                      "placeholder": "Masukan Pekerjaan Ayah"
+                    },
+                    "FIELD-3": {
+                      "label": "Nomor HP/Whatsapp Ayah",
+                      "placeholder": "Masukan Nomor HP/Whatsapp Ayah"
+                    },
+                    "FIELD-4": {
+                      "label": "Nama Ibu",
+                      "placeholder": "Masukan Nama Ibu"
+                    },
+                    "FIELD-5": {
+                      "label": "Pekerjaan Ibu",
+                      "placeholder": "Masukan Pekerjaan Ibu"
+                    },
+                    "FIELD-6": {
+                      "label": "Nomor HP/Whatsapp Ibu",
+                      "placeholder": "Masukan Nomor HP/Whatsapp Ibu"
+                    },
+                    "FIELD-7": {
+                      "label": "Dari Mana Anda Mendengar/Mengetahui Horizon U",
+                      "placeholder": "Pilih Salah Satu",
+                      "description": "Tidak perlu diisi apabila Anda bukan calon mahasiswa yang mengikuti program khusus partnership seperti Triputra Family Scholarship dan lainnya"
+                    },
+                    "FIELD-8": {
+                      "label": "Mengapa Anda Memilih Kuliah di Horizon U",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-9": {
+                      "label": "Nama Ambasador (Khusus Rekomendasi Program Teman Horizon)",
+                      "placeholder": "Masukan Nama Ambasador"
+                    },
+                    "FIELD-10": {
+                      "label": "Upload Surat Rekomendasi",
+                      "placeholder": "Upload File",
+                      "description": "Tidak perlu diisi apabila Anda bukan calon mahasiswa yang mengikuti program khusus partnership seperti Triputra Family Scholarship dan lainnya"
+                    }
+                  },
+                  "RESPONSE": {
+                    "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                    "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                  },
+                  "BUTTON": {
+                    "CANCEL": "Batal",
+                    "SUBMIT": "Simpan Perubahan"
+                  }
+                },
+                "ASSESSMENT-FORM": {
+                  "title": "Tes Penilaian",
+                  "description": "Silakan menjawab semua pertanyaan dengan benar untuk keperluan administrasi kampus.",
+                  "FIELD": {
+                    "placeholder": "Pilih Salah Satu"
+                  }
+                },
+                "BUTTON": {
+                  "SUBMIT": "Simpan Perubahan",
+                  "CANCEL": "Batal"
+                },
+                "RESPONSE": {
+                  "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                  "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                }
+              }
+            }
+          }
+        }
+      },
+      "RE-REGISTRATION-PAGE": {
+        "SECTION": {},
+        "EDIT-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "FORM": {
+                "title": "Edit Formulir  Pendaftaran Ulang",
+                "description": "Silakan lengkapi data formulir pendaftaran ulang secara lengkap dan benar untuk keperluan administrasi kampus.",
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama Lengkap",
+                    "placeholder": "Masukan Nama Lengkap Anda"
+                  },
+                  "FIELD-2": {
+                    "label": "Nomor Telepon",
+                    "placeholder": "Masukan Nomor Telepon",
+                    "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                  },
+                  "FIELD-3": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-4": {
+                    "label": "Program Studi",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Teknik Informatika",
+                      "option-2": "Teknik Mesin",
+                      "option-3": "Teknik Elektro",
+                      "option-4": "Teknik Industri",
+                      "option-5": "Teknik Kimia",
+                      "option-6": "Teknik Industri"
+                    }
+                  },
+                  "FIELD-5": {
+                    "label": "Asal Sekolah/Perguruan Tinggi",
+                    "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+                  },
+                  "FIELD-6": {
+                    "label": "Upload Surat Beasiswa",
+                    "placeholder": "Upload File"
+                  }
+                },
+                "BUTTON": {
+                  "cancel": "Batal",
+                  "submit": "Simpan Perubahan"
+                },
+                "RESPONSE": {
+                  "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                  "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                }
+              }
+            }
+          }
+        }
+      },
+      "CONSULTATION-PAGE": {
+        "SECTION": {
+          "TABLE-SECTION": {
+            "title": "Daftar Konsultasi",
+            "TABLE": {
+              "HEADER": {
+                "header-1": "Nama",
+                "header-2": "Email",
+                "header-3": "Hubungan Dengan Pendaftar",
+                "header-4": "Tanggal Daftar",
+                "header-5": "Aksi"
+              }
+            }
+          }
+        },
+        "EDIT-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "title": "Edit Konsultasi",
+              "description": "Silakan lengkapi data konsultasi secara lengkap dan benar untuk keperluan administrasi kampus.",
+              "FORM": {
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama Lengkap",
+                    "placeholder": "Masukan Nama Lengkap Anda"
+                  },
+                  "FIELD-2": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-3": {
+                    "label": "Hubungan Dengan Pendaftar",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-4": {
+                    "label": "Nomor Telepon",
+                    "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                  },
+                  "FIELD-5": {
+                    "label": "Username/Akun Instagram",
+                    "placeholder": "Masukan Username/Akun Instagram"
+                  }
+                },
+                "RESPONSE": {
+                  "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                  "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                },
+                "BUTTON": {
+                  "SUBMIT": "Simpan Perubahan",
+                  "CANCEL": "Batal"
+                }
+              }
+            }
+          }
+        },
+        "DETAIL-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "title": "Detail Konsultasi",
+              "description": "Berikut adalah informasi lengkap terkait data konsultasi yang telah dikirimkan. Silakan tinjau kembali seluruh data dengan cermat.",
+              "FORM": {
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama Lengkap",
+                    "placeholder": "Masukan Nama Lengkap Anda"
+                  },
+                  "FIELD-2": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-3": {
+                    "label": "Hubungan Dengan Pendaftar",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-4": {
+                    "label": "Nomor Telepon",
+                    "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                  },
+                  "FIELD-5": {
+                    "label": "Username/Akun Instagram",
+                    "placeholder": "Masukan Username/Akun Instagram"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "SCHOLARSHIP-REGISTRATION-PAGE": {
+        "EDIT-PAGE": {
+          "SECTION": {
+            "FORM-SECTION": {
+              "FORM": {
+                "SCHOLARSHIP-FORM": {
+                  "title": "Formulir Data Diri",
+                  "description": "Silakan lengkapi data Formulir Data Diri secara lengkap dan benar untuk keperluan administrasi kampus.",
+                  "FIELD": {
+                    "FIELD-1": {
+                      "label": "Nama Lengkap",
+                      "placeholder": "Masukan Nama Lengkap Anda"
+                    },
+                    "FIELD-2": {
+                      "label": "Nomor Telepon",
+                      "placeholder": "Masukan Nomor Telepon",
+                      "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                    },
+                    "FIELD-3": {
+                      "label": "Email",
+                      "placeholder": "Masukan Email"
+                    },
+                    "FIELD-4": {
+                      "label": "Username/Akun Instagram",
+                      "placeholder": "Masukan Username/Akun Instagram"
+                    },
+                    "FIELD-5": {
+                      "label": "Asal Sekolah/Perguruan Tinggi",
+                      "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+                    },
+                    "FIELD-6": {
+                      "label": "Kelas/Jurusan",
+                      "placeholder": "Masukan Kelas/Jurusan Asal"
+                    },
+                    "FIELD-7": {
+                      "label": "Tanggal Lahir)",
+                      "placeholder": "DD / MM / YYYY"
+                    },
+                    "FIELD-8": {
+                      "label": "Provinsi",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-9": {
+                      "label": "Kabupaten/Kota",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-10": {
+                      "label": "Kecamatan",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-11": {
+                      "label": "Kelurahan/Desa",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-12": {
+                      "label": "Alamat Lengkap",
+                      "placeholder": "Masukan Alamat Lengkap"
+                    },
+                    "FIELD-13": {
+                      "label": "Nomor HP/Whatsapp Orang Tua (Ayah)",
+                      "placeholder": "Masukan Nomor HP/Whatsapp"
+                    },
+                    "FIELD-14": {
+                      "label": "Nomor HP/Whatsapp Orang Tua (Ibu)",
+                      "placeholder": "Masukan Nomor HP/Whatsapp"
+                    },
+                    "FIELD-15": {
+                      "label": "Program Studi",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-16": {
+                      "label": "Status Saat Ini",
+                      "placeholder": "Pilih Salah Satu"
+                    }
+                  },
+                  "RESPONSE": {
+                    "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                    "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                  },
+                  "BUTTON": {
+                    "CANCEL": "Batal",
+                    "SUBMIT": "Simpan Perubahan"
+                  }
+                },
+                "ADDITIONAL-INFORMATION-FORM": {
+                  "title": "Informasi Tambahan",
+                  "description": "Silakan lengkapi data Informasi Tambahan secara lengkap dan benar untuk keperluan administrasi kampus.",
+                  "FIELD": {
+                    "FIELD-1": {
+                      "label": "Provinsi Anda dan Keluarga Saat Ini Tinggal",
+                      "placeholder": "Pilih Salah Satu"
+                    },
+                    "FIELD-2": {
+                      "label": "Berapakah Total Anggota Keluarga Anda",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "1",
+                        "option-2": "2 atau 3",
+                        "option-3": "4",
+                        "option-4": "5 atau lebih"
+                      }
+                    },
+                    "FIELD-3": {
+                      "label": "Apakah Kepala Keluarga Memiliki Tabungan Pribadi/Bersama?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-4": {
+                      "label": "Apa Bahan Bangunan Lantai Rumah Anda? (*)",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Marmer/Granit atau Keramik",
+                        "option-2": "Parket/Vinil/Karpet atau Ubin/Terazo",
+                        "option-3": "Kayu/Papan, Semen/Bata Merah, Bambu, Tanah, atau lainnya"
+                      }
+                    },
+                    "FIELD-5": {
+                      "label": "Apakah Dalam Seminggu Terakhir Anda Mengkonsumsi Daging?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-6": {
+                      "label": "Apakah Anda Mengkonsumsi Nasi Goreng/Nasi Siap Saji Dalam Seminggu Terakhir?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-7": {
+                      "label": "Dalam 1 Bulan Terakhir Apakah Anda/Keluarga Membeli Bahan Perawat Pakaian?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-8": {
+                      "label": "Dalam 1 Bulan Terakhir Apakah Anda/Keluarga Membeli Bahan Bakar/Bensin Untuk Kendaraan?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-9": {
+                      "label": "Apakah Anda Memiliki Kulkas?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    },
+                    "FIELD-10": {
+                      "label": "Apakah Anda Memiliki Mobil?",
+                      "placeholder": "Pilih Salah Satu",
+                      "OPTIONS": {
+                        "option-1": "Ya",
+                        "option-2": "Tidak"
+                      }
+                    }
+                  },
+                  "BUTTON": {
+                    "CANCEL": "Batal",
+                    "SUBMIT": "Simpan Perubahan"
+                  },
+                  "RESPONSE": {
+                    "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                    "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "PUBLIC": {
+      "FOOTER": {
+        "MENU": {
+          "menu-1": "Benefit Kampus",
+          "menu-2": "Fasilitas Kampus",
+          "menu-3": "Program Studi",
+          "menu-4": "Alur Pendaftaran"
+        },
+        "copyright": "© {year} Horizon University Indonesia - Karawang, All Rights Reserved."
+      },
+      "HOME-PAGE": {
+        "METADATA": {
+          "title": "Horizon University Indonesia | Expanding Your Horizons",
+          "description": "Unlock your true potential with Horizon University Indonesia. Innovative higher education built for future generations.",
+          "KEYWORDS": {
+            "key-1": "Horizon University Indonesia",
+            "key-2": "Top Private University Indonesia",
+            "key-3": "Innovative Education",
+            "key-4": "Future Ready Programs",
+            "key-5": "Study in Indonesia"
+          },
+          "OPEN-GRAPH": {
+            "title": "Horizon University Indonesia | Expanding Your Horizons",
+            "description": "Expand your horizons and achieve a brilliant future with Horizon University. Apply now!"
+          }
+        },
+        "SECTION": {
+          "HERO-SECTION": {
+            "heading": "Membentuk Masyarakat Indonesia yang Mendunia",
+            "body": "Excellent study programs in Technology, Business, and Health. Start your academic journey now.",
+            "CTA-BUTTON": {
+              "cta-btn-1": "Daftar Mahasiswa Baru",
+              "cta-btn-2": "Tes Beasiswa Mahasiswa Baru",
+              "cta-btn-3": "Daftar Ulang Beasiswa"
+            }
+          },
+          "PARTNER-SECTION": {
+            "heading": "Menjalin Kemitraan untuk Pengembangan Akademik"
+          },
+          "BENEFIT-SECTION": {
+            "sub-heading": "Manfaat Universitas Horizon",
+            "heading": "Pengalaman Belajar yang Mempersiapkan Masa Depan",
+            "body": "Setiap program yang kami tawarkan dirancang untuk memenuhi kebutuhan pasar kerja, dengan pembekalan keterampilan yang dapat langsung diterapkan.",
+            "BENEFIT-LIST": {
+              "BENEFIT-1": {
+                "title": "Flip Kurikulum",
+                "description": "Kurikulum terbaru yang disesuaikan dengan kebutuhan industri serta didukung dengan kelas Global Workplace English Program (GWEP) untuk menciptakan lulusan berkualitas global dan berdaya saing di dalam dan luar negeri."
+              },
+              "BENEFIT-2": {
+                "title": "Mitra Pendidikan Internasional",
+                "description": "Menjalin kemitraan pendidikan dengan PHINMA Education, jaringan pendidikan internasional terbesar di Filipina dengan pengalaman di Myanmar dan Indonesia."
+              },
+              "BENEFIT-3": {
+                "title": "Mitra Industri Kuat",
+                "description": "Menjalin kemitraan industri yang kuat dengan perusahaan besar Triputra Group, Persada Capital Investama, dan beberapa perusahaan internasional dan lokal untuk kesempatan kerja, magang, dan pembelajaran."
+              },
+              "BENEFIT-4": {
+                "title": "Dosen Berpengalaman",
+                "description": "Pengajar adalah dosen akademisi dan dosen praktisi dari industri, dengan pengalaman tinggi."
+              },
+              "BENEFIT-5": {
+                "title": "Banyak Pilihan Beasiswa",
+                "description": "Tersedia beasiswa, seperti Beasiswa Sahabat Horizon, Beasiswa Adaro (mitra industri), 100% Horizon University Scholarship, Benny Subianto Foundation scholarship, Kip-Kuliah, Karawang Cerdas, dll"
+              },
+              "BENEFIT-6": {
+                "title": "Biaya Kuliah Terjangkau",
+                "description": "Biaya kuliah terjangkau! Biaya masuk tetap dan All-in. Gratis biaya pendaftaran dan dapat dicicil"
+              },
+              "BENEFIT-7": {
+                "title": "Tersedia Kelas Karyawan",
+                "description": "Jadwal kuliah fleksibel mengikuti jadwal kerja. Tersedia untuk program studi S1 Manajemen (Umum), S1 Manajemen (Finance), S1 Manajemen (Marketing) dan S1 Informatika"
+              },
+              "BENEFIT-8": {
+                "title": "Fasilitas Kampus Terbaik",
+                "description": "Fasilitas lengkap, baru, dan relevan untuk setiap program studi yang ada di kampus Horizon University Indonesia"
+              },
+              "BENEFIT-9": {
+                "title": "Jaringan Alumni Kuat",
+                "description": "Memiliki jaringan alumni HorizonU yang tersebar di berbagai banyak industri, baik di dalam dan luar negeri."
+              },
+              "BENEFIT-10": {
+                "title": "Penyerapan Lulusan Tinggi",
+                "description": "Tingkat penyerapan lulusan dari Horizon University Indonesia di ketenagakerjaan (employment rate) sangat tinggi >93%."
+              }
+            }
+          },
+          "FACILITY-SECTION": {
+            "sub-heading": "Fasilitas Universitas Horizon",
+            "heading": "Fasilitas Unggulan di Horizon University Indonesia",
+            "FACILITY-LIST": {
+              "FL-1": {
+                "title": "Gedung A & B",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-2": {
+                "title": "Courtyard",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-3": {
+                "title": "Fasad",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Fasilitas Kampus untuk Membantu Anda Tumbuh dan Berkembang"
+              },
+              "FL-4": {
+                "title": "Mushola",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-5": {
+                "title": "Full AC & Free Wifi",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Maksimalkan Potensi Anda dengan Fasilitas Horizon University"
+              },
+              "FL-6": {
+                "title": "Library",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Fasilitas Kampus untuk Membantu Anda Tumbuh dan Berkembang"
+              },
+              "FL-7": {
+                "title": "Clinic",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-8": {
+                "title": "Mini Hospital",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Maksimalkan Potensi Anda dengan Fasilitas Horizon University"
+              },
+              "FL-9": {
+                "title": "Biomedilab",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Fasilitas Kampus untuk Membantu Anda Tumbuh dan Berkembang"
+              },
+              "FL-10": {
+                "title": "Lab Kebidanan",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-11": {
+                "title": "Lab Keperawatan",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Maksimalkan Potensi Anda dengan Fasilitas Horizon University"
+              },
+              "FL-12": {
+                "title": "Case Room",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Fasilitas Kampus untuk Membantu Anda Tumbuh dan Berkembang"
+              },
+              "FL-13": {
+                "title": "Lab komputer A",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable"
+              },
+              "FL-14": {
+                "title": "Lab Komputer B",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Maksimalkan Potensi Anda dengan Fasilitas Horizon University"
+              },
+              "FL-15": {
+                "title": "Amphitheater",
+                "description": "We offer a range of services and support to ensure your cycling experience is smooth and enjoyable",
+                "description-2": "Fasilitas Kampus untuk Membantu Anda Tumbuh dan Berkembang"
+              }
+            }
+          },
+          "STUDY-PROGRAM-SECTION": {
+            "sub-heading": "Program Studi Universitas Horizon",
+            "heading": "Temukan Program Studi yang Sesuai dengan Impian Anda",
+            "body": "Setiap program studi kami didukung oleh pengajaran dari dosen berkompeten, fasilitas yang modern, serta kesempatan untuk magang dan bekerja sama dengan perusahaan besar.",
+            "STUDY-PROGRAM-LIST": {
+              "STUDY-PROGRAM-1": {
+                "title": "S1 Manajemen",
+                "description": "Horizon U menawarkan 3 konsentrasi S1 Manajemen: Keuangan, Pemasaran, dan Umum, dengan masa studi 8 semester dan gelar Sarjana Manajemen (S.M)."
+              }
+            }
+          },
+          "NEW-STUDENT-REGISTRATION-PROCEDURE-SECTION": {
+            "sub-title": "Prosedur Pendaftaran Mahasiswa Baru",
+            "NEW-STUDENT-REGISTRATION-PROCEDURE": {
+              "STEP-1": {
+                "label": "STEP 1",
+                "title": "Pendaftaran Mahasiswa Baru",
+                "description": "Isi formulir dan tes masuk. Pilih 'Tes Beasiswa' untuk jalur beasiswa, atau 'Daftar' untuk pendaftaran reguler. Calon mahasiswa FIK harus memenuhi syarat tinggi badan dan tes kesehatan tertentu.",
+                "CTA-BUTTON": {
+                  "cb-1": "Tes Beasiswa Mahasiswa Baru",
+                  "cb-2": "Daftar Mahasiswa Baru",
+                  "cb-3": "Selengkapnya"
+                }
+              },
+              "STEP-2": {
+                "label": "STEP 2",
+                "title": "Daftar Ulang Mahasiswa Baru",
+                "description": "Calon mahasiswa yang dinyatakan lulus akan menerima email dalam 15 menit untuk login ke apply.horizon.ac.id. Setelah masuk, lengkapi data yang diperlukan. Lakukan pembayaran down payment di kantor keuangan Horizon University Indonesia atau lewat transfer ke rekening Bank Mandiri (1560091929390 a.n. Yayasan Triputra Persada Horizon Education). Jika Anda mendapatkan beasiswa, jangan lupa konfirmasi surat beasiswa melalui menu Konfirmasi Beasiswa.",
+                "CTA-BUTTON": {
+                  "cb-1": "Konfirmasi Beasiswa"
+                }
+              },
+              "STEP-3": {
+                "label": "STEP 3",
+                "title": "Pemberkasan & Pendaftaran KRS",
+                "description": "Silahkan lakukan enlistment dan upload document berikut sebagai syarat pemberkasan KTP, KK, NISN, Akta Kelahiran, Pas Foto, Ijazah, Transkrip Nilai, Surat Kesehatan (khusus calon mahasiswa Fakultas Ilmu Kesehatan). Video tutorial dapat di klik pada tombol dibawah ini",
+                "CTA-BUTTON": {
+                  "cb-1": "Buku Panduan",
+                  "cb-2": "Video Tutorial"
+                }
+              }
+            }
+          },
+          "ABOUT-US-SECTION": {
+            "HEADING": {
+              "sub-title": "Mengenal Horizon University",
+              "title": "Temukan Cerita dan Pengalaman di Horizon University Indonesia",
+              "description": "Kami mengajak Anda untuk melihat langsung bagaimana Horizon University Indonesia memberikan pengalaman pendidikan yang menyeluruh dan mendukung pertumbuhan pribadi serta profesional mahasiswa."
+            }
+          },
+          "REGISTRATION-BROCHURE-SECTION": {
+            "sub-title": "Brosur Pendaftaran",
+            "title": "Unduh Brosur Pendaftaran Mahasiswa Baru",
+            "BROCHURE-LIST": {
+              "b1": "Brosur Kelas Reguler",
+              "b2": "Brosur Kelas Karyawan"
+            },
+            "download-button-label": "Download Brosur"
+          },
+          "PMB-SECTION": {
+            "sub-heading": "Pendaftaran Mahasiswa Baru 2025"
+          },
+          "STUDENT-OPTION-SECTION": {
+            "sub-heading": "Testimoni Alumni & Mahasiswa",
+            "heading": "<h2>Dengan kualitas pendidikan yang kami tawarkan, mahasiswa kami berhasil berkembang tidak hanya dalam akademik, <span class='highlight-text-1'>tetapi juga dalam keterampilan hidup dan dunia kerja.</span> </h2>"
+          },
+          "CONSULTATION-SECTION": {
+            "sub-heading": "Konsultasikan Masa Depanmu!",
+            "heading": "<h2>Apakah Anda siap untuk memulai perjalanan akademik yang menginspirasi? <span class='highlight-text-1'>Isi formulir pendaftaran di bawah ini.</span></h2>",
+            "CONSULTATION-FORM": {
+              "FIELD": {
+                "FIELD-1": {
+                  "label": "Nama Lengkap",
+                  "placeholder": "Masukan Nama Lengkap Anda"
+                },
+                "FIELD-2": {
+                  "label": "Email",
+                  "placeholder": "Masukan Email"
+                },
+                "FIELD-3": {
+                  "label": "Hubungan Dengan Pendaftar",
+                  "placeholder": "Pilih Salah Satu"
+                },
+                "FIELD-4": {
+                  "label": "Nomor Telepon",
+                  "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                },
+                "FIELD-5": {
+                  "label": "Username/Akun Instagram",
+                  "placeholder": "Masukan Username/Akun Instagram"
+                }
+              },
+              "RESPONSE": {
+                "success": "Formulir telah berhasil dikirim! Terima kasih.",
+                "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih."
+              },
+              "BUTTON": {
+                "SUBMIT": "Daftar Sekarang"
+              }
+            }
+          }
+        }
+      }
+    },
+    "FORM-MODULE": {
+      "SCHOLARSHIP-REGISTER-PAGE": {
+        "SECTION": {
+          "FORM-SECTION": {
+            "sub-title": "Formulir Data Diri",
+            "title": "Isilah Formulir Data Diri ini dengan lengkap dan data yang benar! Mohon mengisi formulir menggunakan huruf besar!",
+            "FORM": {
+              "SCHOLARSHIP-FORM": {
+                "title": "Formulir Data Diri",
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Nama Lengkap",
+                    "placeholder": "Masukan Nama Lengkap Anda"
+                  },
+                  "FIELD-2": {
+                    "label": "Nomor Telepon",
+                    "placeholder": "Masukan Nomor Telepon",
+                    "description": "Pastikan Nomor HP/Whatsapp Anda Aktif!"
+                  },
+                  "FIELD-3": {
+                    "label": "Email",
+                    "placeholder": "Masukan Email"
+                  },
+                  "FIELD-4": {
+                    "label": "Username/Akun Instagram",
+                    "placeholder": "Masukan Username/Akun Instagram"
+                  },
+                  "FIELD-5": {
+                    "label": "Asal Sekolah/Perguruan Tinggi",
+                    "placeholder": "Masukan Asal Sekolah/Perguruan Tinggi"
+                  },
+                  "FIELD-6": {
+                    "label": "Kelas/Jurusan",
+                    "placeholder": "Masukan Kelas/Jurusan Asal"
+                  },
+                  "FIELD-7": {
+                    "label": "Tanggal Lahir)",
+                    "placeholder": "DD / MM / YYYY"
+                  },
+                  "FIELD-8": {
+                    "label": "Provinsi",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-9": {
+                    "label": "Kabupaten/Kota",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-10": {
+                    "label": "Kecamatan",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-11": {
+                    "label": "Kelurahan/Desa",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-12": {
+                    "label": "Alamat Lengkap",
+                    "placeholder": "Masukan Alamat Lengkap"
+                  },
+                  "FIELD-13": {
+                    "label": "Nomor HP/Whatsapp Orang Tua (Ayah)",
+                    "placeholder": "Masukan Nomor HP/Whatsapp"
+                  },
+                  "FIELD-14": {
+                    "label": "Nomor HP/Whatsapp Orang Tua (Ibu)",
+                    "placeholder": "Masukan Nomor HP/Whatsapp"
+                  },
+                  "FIELD-15": {
+                    "label": "Program Studi",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-16": {
+                    "label": "Status Saat Ini",
+                    "placeholder": "Pilih Salah Satu"
+                  }
+                }
+              },
+              "ADDITIONAL-INFORMATION-FORM": {
+                "title": "Informasi Tambahan",
+                "FIELD": {
+                  "FIELD-1": {
+                    "label": "Provinsi Anda dan Keluarga Saat Ini Tinggal",
+                    "placeholder": "Pilih Salah Satu"
+                  },
+                  "FIELD-2": {
+                    "label": "Berapakah Total Anggota Keluarga Anda",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "1",
+                      "option-2": "2 atau 3",
+                      "option-3": "4",
+                      "option-4": "5 atau lebih"
+                    }
+                  },
+                  "FIELD-3": {
+                    "label": "Apakah Kepala Keluarga Memiliki Tabungan Pribadi/Bersama?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-4": {
+                    "label": "Apa Bahan Bangunan Lantai Rumah Anda? (*)",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Marmer/Granit atau Keramik",
+                      "option-2": "Parket/Vinil/Karpet atau Ubin/Terazo",
+                      "option-3": "Kayu/Papan, Semen/Bata Merah, Bambu, Tanah, atau lainnya"
+                    }
+                  },
+                  "FIELD-5": {
+                    "label": "Apakah Dalam Seminggu Terakhir Anda Mengkonsumsi Daging?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-6": {
+                    "label": "Apakah Anda Mengkonsumsi Nasi Goreng/Nasi Siap Saji Dalam Seminggu Terakhir?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-7": {
+                    "label": "Dalam 1 Bulan Terakhir Apakah Anda/Keluarga Membeli Bahan Perawat Pakaian?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-8": {
+                    "label": "Dalam 1 Bulan Terakhir Apakah Anda/Keluarga Membeli Bahan Bakar/Bensin Untuk Kendaraan?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-9": {
+                    "label": "Apakah Anda Memiliki Kulkas?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  },
+                  "FIELD-10": {
+                    "label": "Apakah Anda Memiliki Mobil?",
+                    "placeholder": "Pilih Salah Satu",
+                    "OPTIONS": {
+                      "option-1": "Ya",
+                      "option-2": "Tidak"
+                    }
+                  }
+                }
+              },
+              "BUTTON": {
+                "NEXT": "Selanjutnya",
+                "BACK": "Kembali",
+                "SUBMIT": "Daftar Beasiswa"
+              },
+              "RESPONSE": {
+                "error": "Pastikan semua formulir telah diisi dengan benar! Terima kasih.",
+                "success": "Formulir telah berhasil dikirim! Terima kasih."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

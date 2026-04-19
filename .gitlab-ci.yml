@@ -1,0 +1,84 @@
+stages:
+  - build
+  - deploy
+
+staging-build:
+  stage: build
+  variables:
+    CI_PROJECT_PATH: "willy"
+    IMAGE_NAME: "horizon-university-indonesia"
+  before_script:
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+  script:
+    - echo "$BASE_ENV" > .env
+    # BUILD IMAGE WITH COMMIT SHA
+    - docker buildx build -f docker/Dockerfile -t $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_JOB_ID --build-arg BUILDKIT_INLINE_CACHE=1 .
+    # RETAG IMAGE LATEST WITH DIGEST FROM PREVIOUS IMAGE
+    - docker tag $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_JOB_ID $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:staging
+    # PUSH IMAGE COMMIT SHA and LATEST
+    - docker push $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:staging
+    - docker rmi $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:staging
+  tags:
+    - staging
+  only:
+    - staging
+
+staging-deployment:
+  stage: deploy
+  variables:
+    CI_PROJECT_PATH: "willy"
+    IMAGE_NAME: "horizon-university-indonesia"
+  before_script:
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+  environment:
+    name: staging
+    url: https://rnw.microads.co.id
+  script:
+    - docker system prune -f
+    - if [ "$(docker ps -a -q -f name=horizon_university)" ]; then docker rm -f horizon_university; fi
+    - docker run -dit --name horizon_university --restart always -p 3022:3000 $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:staging
+    - docker exec horizon_university npx prisma migrate deploy
+  tags:
+    - staging
+  only:
+    - staging
+
+production-build:
+  stage: build
+  variables:
+    CI_PROJECT_PATH: "willy"
+    IMAGE_NAME: "horizon-university-indonesia"
+  before_script:
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+  script:
+    - echo "$BASE_ENV_PRODUCTION" > .env
+    # BUILD IMAGE WITH COMMIT SHA
+    - docker buildx build -f docker/Dockerfile -t $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_JOB_ID --build-arg BUILDKIT_INLINE_CACHE=1 .
+    # RETAG IMAGE LATEST WITH DIGEST FROM PREVIOUS IMAGE
+    - docker tag $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_JOB_ID $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:production
+    # PUSH IMAGE COMMIT SHA and LATEST
+    - docker push $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:production
+    - docker rmi $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:production
+  tags:
+    - staging
+  only:
+    - production
+
+
+production-deployment:
+  stage: deploy
+  variables:
+    CI_PROJECT_PATH: "willy"
+    IMAGE_NAME: "horizon-university-indonesia"
+  before_script:
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+  environment:
+    name: production
+  script:
+    - docker system prune -f
+    - if [ "$(docker ps -a -q -f name=horizon_university)" ]; then docker rm -f horizon_university && docker rmi $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:production; fi
+    - docker run -dit --name horizon_university --restart always -p 3022:3000 $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:production
+  tags:
+    - horizon-university-production
+  only:
+    - production

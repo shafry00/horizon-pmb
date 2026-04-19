@@ -1,0 +1,204 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Consultation {
+  id                         Int      @id @default(autoincrement())
+  fullName                   String
+  email                      String
+  phoneNumber                String
+  instagramUsername          String?
+  relationshipWithRegistrant String
+  createdAt                  DateTime @default(now())
+  updatedAt                  DateTime @updatedAt
+}
+
+model Scholarship {
+  id                Int          @id @default(autoincrement())
+  fullName          String
+  phoneNumber       String
+  email             String
+  instagramUsername String?
+  institutionName   String
+  classOrMajor      String
+  birthDate         String
+  province          String
+  districtOrCity    String
+  subDistrict       String
+  village           String
+  fullAddress       String
+  fatherContact     String
+  motherContact     String
+  studyProgramId    Int
+  studyProgram      StudyProgram @relation(fields: [studyProgramId], references: [id])
+  currentStatus     String
+
+  currentProvince                String
+  totalFamilyMembers             String
+  hasFamilySavings               String
+  houseFloorMaterial             String
+  consumedMeatLastWeek           String
+  consumedFriedRiceLastWeek      String
+  boughtLaundrySuppliesLastMonth String
+  boughtFuelLastMonth            String
+  hasRefrigerator                String
+  hasCar                         String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ReRegister {
+  id                Int          @id @default(autoincrement())
+  fullName          String
+  phoneNumber       String
+  email             String
+  studyProgramId    Int
+  studyProgram      StudyProgram @relation(fields: [studyProgramId], references: [id])
+  institutionName   String
+  scholarshipLetter String?
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+}
+
+model PMB {
+  id                Int          @id @default(autoincrement())
+  studyProgramId    Int
+  studyProgram      StudyProgram @relation(fields: [studyProgramId], references: [id])
+  fullName          String
+  phoneNumber       String
+  instagramUsername String?
+  placeOfBirth      String
+  dateOfBirth       DateTime
+  gender            String
+  religion          String
+  domicileAddress   String
+  province          String
+  districtOrCity    String
+  subDistrict       String
+  village           String
+  institutionName   String
+  graduationYear    String
+  maritalStatus     String
+  employmentStatus  String
+
+  fatherName           String
+  fatherOccupation     String
+  fatherContact        String
+  motherName           String
+  motherOccupation     String
+  motherContact        String
+  sourceInfoOfHorizonU String
+  reasonChooseHorizonU String
+  ambassadorName       String?
+  scholarshipLetter    String?
+  assessmentAnswers    AssessmentAnswer[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model StudyProgram {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  reRegisters  ReRegister[]
+  pmbs         PMB[]
+  scholarships Scholarship[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AssessmentQuestion {
+  id        Int      @id @default(autoincrement())
+  question  String   @unique
+  optionA   String
+  optionB   String
+  optionC   String
+  optionD   String
+  optionE   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  assessmentAnswers AssessmentAnswer[]
+}
+
+model AssessmentAnswer {
+  id             Int      @id @default(autoincrement())
+  pmbId          Int
+  questionId     Int
+  selectedOption String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+   pmb    PMB  @relation(fields: [pmbId], references: [id], onDelete: Cascade)
+  question AssessmentQuestion @relation(fields: [questionId], references: [id])
+}
+
+// model Province {
+//   id        String    @id
+//   name      String
+//   regencies Regency[]
+// }
+
+// model Regency {
+//   id         String     @id
+//   name       String
+//   province   Province   @relation(fields: [provinceId], references: [id])
+//   provinceId String
+//   districts  District[]
+// }
+
+// model District {
+//   id        String    @id
+//   name      String
+//   regency   Regency   @relation(fields: [regencyId], references: [id])
+//   regencyId String
+//   villages  Village[]
+// }
+
+// model Village {
+//   id         String   @id
+//   name       String
+//   district   District @relation(fields: [districtId], references: [id])
+//   districtId String
+// }
+
+model User {
+  id        String   @id @default(uuid())
+  name      String 
+  email     String   @unique
+  password  String
+  role      Role     @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sessions Session[]
+}
+
+enum Role {
+  USER
+  ADMIN
+  SUPER_ADMIN
+}
+
+model Session {
+  id        String   @id
+  userId    String
+  expiresAt DateTime
+
+  user User @relation(references: [id], fields: [userId], onDelete: Cascade)
+  @@index([userId]) 
+}

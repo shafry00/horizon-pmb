@@ -1,0 +1,43 @@
+import React from "react";
+import StudentInformationForm from "../../../../_components/student-information-form";
+import {
+  TAssessmentQuestion,
+  TNewStudentRegistrationDetail,
+  TStudyProgram,
+} from "@/types";
+import ParentInformationForm from "../../../../_components/parent-information-form";
+import AssestmentTestForm from "../../../../_components/assestment-test-form";
+
+interface IFormSectionProps {
+  studentInformationById: TNewStudentRegistrationDetail;
+  studyPrograms: TStudyProgram[];
+  locale: string;
+  assessments: TAssessmentQuestion[];
+}
+
+const FormSection: React.FC<IFormSectionProps> = (props) => {
+  const { studentInformationById, studyPrograms, assessments, locale } = props;
+  return (
+    <section className="flex flex-col gap-4">
+      <StudentInformationForm
+        registration={studentInformationById}
+        studyPrograms={studyPrograms}
+        locale={locale}
+        functionType="detail"
+      />
+      <ParentInformationForm
+        registration={studentInformationById}
+        locale={locale}
+        functionType="detail"
+      />
+      <AssestmentTestForm
+        locale={locale}
+        registration={studentInformationById}
+        assessments={assessments}
+        functionType="detail"
+      />
+    </section>
+  );
+};
+
+export default FormSection;

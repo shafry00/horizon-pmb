@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: horizon-university-indonesia
+    ports:
+      - "3307:3306"
+    depends_on:
+      - mysql
+    environment:
+      - DATABASE_URL=mysql://root:password@mysql:3306/mydb
+      - NODE_ENV=development
+    volumes:
+      - ..:/app
+      - /app/node_modules
+    command: >
+      sh -c "
+        bunx prisma generate &&
+        bunx prisma migrate deploy &&
+        bunx prisma db seed &&
+        bun run start
+      "
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
