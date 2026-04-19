@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const upload_controller_1 = require("../controllers/upload.controller");
+const apiKey_middleware_1 = require("../middlewares/apiKey.middleware");
+const upload_validation_1 = require("../validations/upload.validation");
+const validateUpload_middleware_1 = require("../middlewares/validateUpload.middleware");
+const router = (0, express_1.Router)();
+router.post("/upload", apiKey_middleware_1.verifyApiKey, ...(0, validateUpload_middleware_1.validateUpload)(upload_validation_1.uploadSchema, "file"), upload_controller_1.uploadFile);
+router.delete("/upload/:filename", apiKey_middleware_1.verifyApiKey, upload_controller_1.deleteFile);
+exports.default = router;

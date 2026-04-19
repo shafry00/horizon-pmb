@@ -1,0 +1,35 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  variables:
+    CI_PROJECT_PATH: "horizon-university-indonesia"
+    IMAGE_NAME: "horizon-university-indonesia-api"
+  before_script:
+    - docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+  script:
+    - echo "$BASE_ENV" > .env
+    - docker buildx build -f Dockerfile -t $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_COMMIT_REF_NAME --build-arg BUILDKIT_INLINE_CACHE=1 .
+    - docker push $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_COMMIT_REF_NAME
+  tags:
+    - staging
+  only:
+    - staging
+    - production
+
+deploy:
+  stage: deploy
+  variables:
+    CI_PROJECT_PATH: "horizon-university-indonesia"
+    IMAGE_NAME: "horizon-university-indonesia-api"
+  script:
+    - docker system prune -f
+    - if [ "$(docker ps -a -q -f name=horizon_api)" ]; then docker rm -f horizon_api && docker rmi $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_COMMIT_REF_NAME; fi
+    - docker run -dit --name horizon_api --restart always -p 3023:3000 $CI_REGISTRY/$CI_PROJECT_PATH/$IMAGE_NAME:$CI_COMMIT_REF_NAME
+  tags:
+    - staging
+  only:
+    - staging
+    - production
