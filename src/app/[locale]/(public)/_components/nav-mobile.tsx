@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 
 interface TNavMobileProps {
@@ -22,7 +22,7 @@ interface MenuItem {
 const NavMobile: React.FC<TNavMobileProps> = (props) => {
   const { showModal, menu, t, pathname } = props;
 
-  const modalVariants = {
+  const modalVariants: Variants = {
     hidden: {
       opacity: 0,
     },
@@ -43,7 +43,7 @@ const NavMobile: React.FC<TNavMobileProps> = (props) => {
     },
   };
 
-  const linkItemVariants = {
+  const linkItemVariants: Variants = {
     hidden: { opacity: 0, y: "50%" },
     visible: {
       opacity: 1,
